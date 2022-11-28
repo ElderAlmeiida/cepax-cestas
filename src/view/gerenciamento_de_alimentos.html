@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../view/style.css">
+    
+    <title>Gerenciamento de alimentos</title>
+</head>
+<body>  
+  <div class="  m-auto text-center font-extrabold text-[4rem] text-[#eb7b5d] drop-shadow-md"><h1 class="mt-2">Gerenciamento de alimentos</h1></div>
+   
+    <hr class="my-4 mx-auto w-[750px] h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-[#eb7b5d]">
+  <div id="main-dashboard" class="max-w-[65.87rem] h-[ 45.16rem] p-8 ml-auto mr-auto mt-[8rem] grid bg-red-600 bg-opacity-[58%] rounded-md shadow-lg"  >
+    
+  <form >
+    
+     
+    <div class="modal-container m-auto w-[42rem] justify-center">
+      <div class="modal">
+      <input list="alimentos" name="lista" id="m-produto" placeholder="Selecionar produto" class="h-[56px] text-xl m-4 text-center font-bold"  required>
+    <datalist id="alimentos">
+      <option value="Arroz">
+      <option value="Feijão">
+      <option value="Óleo">
+      <option value="Sal">
+      <option value="Açucar">
+      <option value="Café">
+      <option value="Macarrão">
+      <option value="Fubá">
+      <option value="Farinha de trigo">
+      <option value="Biscoito">  
+      <option value="Leite integral">
+      <option value="Manteiga">  
+      <option value="Flocão de milho"> 
+      <option value="Pasta de dente">
+      <option value="Papel higienico">
+      <option value="Sabão em pó">
+      <option value="Água sanitária"> 
+      <option value="Sabonete"> 
+    </datalist>
+    
+      
+        <form>
+          <input id="m-quantidade" type="number" class=" h-[55px] text-xl text-center font-bold" placeholder="Quantidade" required  />
+          <button id="btnSalvar" class="font-bold ml-4 bg-gray-800  text-white p-4 m-auto transition-all  duration-700 hover:bg-gray-700">Salvar</button>
+        </form>
+      </div>
+    </div>
+    <div class="divTable m-auto p-2 gap-2">
+      <table>
+        <thead>
+          <tr class=" bg-gray-800 text-white text-left pl-2  ">
+            <th class=" text-[1.25rem]">Produto</th>
+            <th class=" text-[1.25rem] text-center">QTD</th>
+            <th class="acao text-sm text-center">EDITAR</th>
+            <th class="acao text-sm text-center">EXCLUIR</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    
+
+  </div>
+    </div>
+  <div class ="" id="menu">.</div> 
+  <div class="" id="content">.</div>
+
+    <script src="../model/gerenciamento_de_alimentos.js" onload="content()"></script>
+    <script src="../model/menu.js" onload="menu()"></script>
+</body>
+</html>

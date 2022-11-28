@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../view/style.css">
+    <title>dashboard</title>
+</head>
+<body>
+
+  
+
+    <div class =" " id="menu">.</div>
+    <div class=" max-w-xl m-auto text-center font-extrabold text-[4rem] text-[#eb7b5d] drop-shadow-md"><h1 class="mt-2">Dashboard</h1></div>
+   
+    <hr class="my-4 mx-auto w-[750px] h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-[#eb7b5d]">
+    <div id="main-dashboard" class="max-w-[65.87rem] h-[ 45.16rem] p-10 ml-auto mr-auto mt-[8rem] grid bg-red-600 bg-opacity-[58%] rounded-md shadow-lg"  > 
+        <div class=" main-dash m-4">
+        
+            <label class="item1 font-bold text-white"  for="Tipo 1">Cesta Pequena</label>
+            <img class="content1 mt-10" src="./public/1.png" height="100" width="100" alt="">
+            <label class=" item2 font-bold text-white" for="cestas-disponiveis" >Numero de Alimentos </label>
+             <h2 id="cesta_pequena_disponivel" class="content2  w-[2rem] h-[2rem] relative top-[55px] left-10 text-center items-center text-2xl text-white " id="alimentos_on">11</h2>
+            <label class="item3 font-bold text-white" for="cestas-geradas">Cestas Geradas</label>
+            <h2 class="content3 w-[2rem] h-[2rem] relative top-[55px] left-10 text-center items-center text-2xl text-white" id="cesta_on_p">0</h2>
+          
+            <button class=" content5 font-bold bg-gray-800  text-white p-4 m-auto transition-all  duration-700 hover:bg-gray-700 rounded-md shadow-lg " onclick="cesta_pequena()">GERAR CESTA</button>
+             
+        </div>
+       
+        <div class=" main-dash m-4">
+        
+            <label class="item1 font-bold text-white"  for="Tipo 1">Cesta Média</label>
+            <img class="content1 mt-10" src="./public/2.png" height="100" width="100" alt="">
+            <label class=" item2 font-bold text-white" for="cestas-disponiveis">Numero de Alimentos </label>
+             <h2 id="cesta_pequena_disponivel" class="content2  w-[2rem] h-[2rem] relative top-[55px] left-10 text-center items-center text-2xl text-white">18</h2>
+            <label class="item3 font-bold text-white" for="cestas-geradas">Cestas Geradas</label>
+            <h2 class="content3 w-[2rem] h-[2rem] relative top-[55px] left-10 text-center items-center text-2xl text-white" id="cesta_on_m">0</h2>
+            
+            
+            <button class=" content5 font-bold bg-gray-800  text-white p-4 m-auto transition-all  duration-700 hover:bg-gray-700 rounded-md shadow-lg " onclick="cesta_media()">GERAR CESTA</button>
+             
+        </div>
+
+        <div class=" main-dash m-4">
+        
+            <label class="item1 font-bold text-white"  for="Tipo 1">Cesta Grande</label>
+            <img class="content1 mt-10" src="./public/3.png" height="100" width="100" alt="">
+            <label class=" item2 font-bold text-white" for="cestas-disponiveis"> Numero de alimentos </label>
+             <h2 id="cesta_pequena_disponivel" class="content2  w-[2rem] h-[2rem] relative top-[55px] left-10 text-center items-center text-2xl text-white">23</h2>
+            <label class="item3 font-bold text-white" for="cestas-geradas">Cestas Geradas</label>
+            <h2 class="content3 w-[2rem] h-[2rem] relative top-[55px] left-10 text-center items-center text-2xl text-white" id="cesta_on_g">0</h2>
+         
+            <button class=" content5 font-bold bg-gray-800  text-white p-4 m-auto transition-all  duration-700 hover:bg-gray-700 rounded-md shadow-lg " onclick="cesta_grande()">GERAR CESTA</button>
+            
+        </div>
+
+
+
+
+
+    </div>
+
+
+    
+    <script src="../model/dashboard.js"></script>
+    <script src="../model/menu.js" onload="menu()"></script>
+</body>
+</html>
